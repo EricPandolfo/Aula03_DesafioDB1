@@ -49,10 +49,7 @@ public class DesafioDePortugues {
         }
         else 
             System.out.println(contador1 + " vogal");
-    
-    
-    
-    
+       
     }
 
 }

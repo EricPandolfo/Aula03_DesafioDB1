@@ -50,4 +50,5 @@ public class Desafio_de_Matematica {
             System.out.println(", nao é primo");
         }
     }
+
 }
