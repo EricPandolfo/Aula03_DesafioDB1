@@ -1,0 +1,58 @@
+package desafiodeportugues;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Eric Pandolfo
+ */
+public class DesafioDePortugues {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner teclado = new Scanner(System.in);
+        String p;                                               
+        System.out.print("Digite um texto: ");
+        p = teclado.nextLine();                              //Ler o texto digitado
+
+//Quantidade de caractere
+        if(p.length()>2){
+        System.out.print(p.length() + " caracteres, ");           
+        }else{
+            System.out.print(p.length() + " caractere, ");
+        }
+//Quantidade de espaços em branco
+        int contador = 0;
+        for (int x = 0; x < p.length(); x++) {               //Repita esta instrução até que o valor de x seja igual ao número de caracteres digitados
+            if (p.charAt(x) == ' ') {                        //Retorna o valor do char da vez e, se comparação for verdadeira, incrementa +1 na variável "contador"
+                contador++;
+            }
+        }
+        if(contador>1){
+        System.out.print(contador + " espaços em branco, ");
+        }else{
+            System.out.print(contador + " espaço em branco, ");
+        } 
+            
+//Quantidade de vogais
+            int contador1 = 0;
+        for (int x1 = 0; x1 < p.length(); x1++) {              
+            if (p.charAt(x1) == 'a' || p.charAt(x1) == 'e' || p.charAt(x1) == 'i' || p.charAt(x1) == 'o' || p.charAt(x1) == 'u' || p.charAt(x1) == 'A' || p.charAt(x1) == 'E' || p.charAt(x1) == 'I' || p.charAt(x1) == 'O' || p.charAt(x1) == 'U')  {                        
+                contador1++;
+            }
+        }
+        if (contador1>1){
+        System.out.println(contador1 + " vogais");
+        }
+        else 
+            System.out.println(contador1 + " vogal");
+    
+    
+    
+    
+    }
+
+}
